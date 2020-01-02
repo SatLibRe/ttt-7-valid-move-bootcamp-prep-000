@@ -11,8 +11,9 @@ end
 def valid_move?(board,index)
   if position_taken?(board,index)  == false 
     return true 
+  elsif index > 8
+    return false 
   end 
-  return false
 end 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
