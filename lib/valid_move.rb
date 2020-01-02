@@ -8,7 +8,7 @@ def position_taken?(board,index)
     end 
 end 
 
-def valid_move(board,index)
+def vaild_move(board,index)
   if position_taken?(board,index)  == false 
     return true 
   end 
