@@ -9,7 +9,7 @@ def position_taken?(board,index)
 end 
 
 def valid_move?(board,index)
-  if position_taken?(board,index)  == false 
+  if position_taken?(board,index)  == false && (0..8).to_a.include?(index)
     return true 
   end 
   return false
